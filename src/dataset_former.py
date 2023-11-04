@@ -6,7 +6,7 @@ from typing import Dict, Tuple, List
 
 class DatasetFormer:
     @staticmethod
-    def form_dataset(dataset_folder:Path) -> Dict[str, List[Dict[str, str | Tuple[float, float]]]]:
+    def form_datasets(dataset_folder:Path) -> Dict[str, List[Dict[str, str | Tuple[float, float]]]]:
         """
         Generates dataset in format: {prompt: {"image": path/to/image, "gt": Tuple[float, float] } }
         :param dataset_folder:
