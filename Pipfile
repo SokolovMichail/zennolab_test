@@ -6,8 +6,10 @@ name = "pypi"
 [packages]
 pillow="*"
 torch="*"
+accelerate="*"
 transformers = {version = "*", extras = ["full"]}
 scipy = "*"
+bitsandbytes="*"
 
 [dev-packages]
 

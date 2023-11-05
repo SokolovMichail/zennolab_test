@@ -31,5 +31,5 @@ class DatasetFormer:
                             )
                     except json.decoder.JSONDecodeError:
                         continue
-            result[directory.name] = image_list
+            result[directory.name.replace("_"," ")] = image_list
         return result
