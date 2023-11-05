@@ -16,6 +16,7 @@ RUN apt-get update -y && apt-get install -y python3-pip && \
     apt-get install ffmpeg libsm6 libxext6 -y
 # install pip packages
 RUN pip3 install -U pipenv==2023.5.19
-COPY Pipfile Pipfile
-COPY Pipfile.lock Pipfile.lock
+COPY . .
 RUN pipenv install --system
+
+CMD python3 run.py
