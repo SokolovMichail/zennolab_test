@@ -5,8 +5,8 @@ Download and unzip tasks archive into the data folder in repository root, so the
 ```
 data
   tasks
-    task1
-    task2
+    squirrels_head
+    squirrels_tail
     ...
 src
 run.py
