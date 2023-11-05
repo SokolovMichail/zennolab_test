@@ -20,9 +20,10 @@ docker build -f Dockerfile . --tag zennolab_test
 
 ### Running container
 ```
-docker run zennolab_test -v ./reports:/app/reports --gpus=all
+docker run --gpus=all  -v ./reports:/app/reports zennolab_test
 ```
 The container runs for about 2.4 hours on NVidia RTX3050.
+After the run, the report can be found in "reports" folder
 
 ### Notes
 
